@@ -4,20 +4,35 @@
 		<div class="m1">
 			<div class="username">
 				<span></span>
-				<input type="text" placeholder="请输入你的手机号码">
-				<button>获取验证码</button>
+				<input type="text" placeholder="请输入你的手机号码" v-model="uname">
+				<button @click="sent">获取验证码</button>
 			</div>
 			<div class="ma">
 				<span></span>
-				<input type="text" placeholder="请输入你验证码">
+				<input type="text" placeholder="请输入你验证码" v-model="pass">
 			</div>	
-			<div class="regist">注册</div>		
+			<div class="regist" @click="zhuce">注册</div>		
 		</div>		
 	</div>
 
 </template>
 <script>
-	
+	export default {
+  data () {
+    return {
+      uname:'',
+      pass:''
+    }
+  },
+  methods:{
+  	sent(){
+  		
+  	},
+  	zhuce(){
+			alert(this.uname+"===="+this.pass);
+  	}
+  }
+}
 
 </script>
 <style scoped>
