@@ -22,7 +22,7 @@
 				<div class="plist">
 					<ul>
 						<li >
-							<div class="pimg" :style="{background:'url('+imgurl+') no-repeat'}"></div>
+							<div class="pimg" :style="{background:'url('+url+imgurl+') no-repeat'}"></div>
 							<div class="pname">地暖</div>
 						</li>
 
@@ -39,7 +39,8 @@
     return {
       list:["卫浴洁具","灯饰照明","橱柜厨电","瓷板地砖","家用电器","墙纸涂料","掉丁门窗","全屋定制","客厅家具","卧室家具","餐厅家具","辅材五金","装修服务"],
       menui:0,
-      imgurl:'../../../static/img/113.jpg'
+      url:'static/img/',
+      imgurl:'113.jpg'
     }
   },
   methods:{
