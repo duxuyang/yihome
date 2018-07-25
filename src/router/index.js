@@ -6,6 +6,10 @@ import login from '@/components/login'
 import setpass from '@/components/setpass'
 import goodslist from '@/components/goodslist'
 import imagelist from '@/components/imagelist'
+import footer from '@/components/footer'
+import main from '@/components/main'
+import myinfo from '@/components/myinfo'
+import setting from '@/components/setting'
 
 
 Vue.use(Router)

@@ -1,44 +1,19 @@
 <template>
 	<div>
-		<header class="header">
-			<div class="left">
-				<div class="back"></div>
-			</div>
-			<div class="cen">图片列表</div>
-			<div class="rigth"></div>
-		</header>
+    <top tname="图片列表" @sendback="fanhui"></top>
 		<div class="content"> 
 			<div class="mtop">
 				<div v-for="(val,index) in tablist" @click="tabm(index)"><span>{{val}}</span></div>
-				
 			</div>
 			<div class="keylist">
 				<div class="key1" v-show="tabi==0">
 					<ul>
-						<li class="active">全部</li>
-						<li>简欧</li>
-						<li>简欧</li>
-						<li>简欧</li>
-						<li>简欧</li>
-						<li>简欧</li>
-						<li>简欧</li>
-						<li>简欧</li>
-						<li>简欧</li>
-						<li>简欧</li>
+						<li :class="{active:index==list1i}" v-for="(val,index) in list1" @click="sub1(val,index)">{{val}}</li>
 					</ul>
 				</div>
 				<div class="key2" v-show="tabi==1">
 					<ul>
-						<li class="active">全部</li>
-						<li>简欧</li>
-						<li>简欧</li>
-						<li>简欧</li>
-						<li>简欧</li>
-						<li>卫生间</li>
-						<li>儿童房</li>
-						<li>衣帽间</li>
-						<li>简欧</li>
-						<li>简欧</li>
+						<li :class="{active:index==list2i}" v-for="(val,index) in list2" @click="sub2(index)">{{val}}</li>
 					</ul>					
 				</div>
 			</div>
@@ -54,15 +29,20 @@
 
 			</div>			
 		</div>	
-		<div class="screen" @click="lost"></div>
+		<div class="screen" @click="lost" v-show="tabi==2?false:true"></div>
 	</div>
 </template>
 <script>
+	import top from '@/components/top'
 	export default {
   data () {
     return {
       tablist:["风格","空间"],
-      tabi:'2'
+      tabi:'2',
+      list1:["全部","简欧","美式","欧式","现代","中式","北欧","田园","地中海","混搭"],
+      list2:["全部","客厅","卧室","餐厅","厨房","卫生间","阳台","儿童房","书房","衣帽间"],
+      list1i:'0',
+      list2i:'0'
     }
   },
   methods:{
@@ -71,7 +51,20 @@
   	},
   	lost(){
   		this.tabi=2;
+  	},
+  	sub1(val,index){
+  		this.list1i=index;
+  	},
+  	sub2(val,index){
+  		this.list2i=index;
+  	},
+  	fanhui(msg){
+  		
+  		this.$router.go(-1);
   	}
+  },
+  components:{
+  	'top':top
   }
 }
 
