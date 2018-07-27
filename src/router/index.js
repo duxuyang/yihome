@@ -27,14 +27,19 @@ const setuser = () => import('@/components/setuser')
 const ceshi1 = () => import('@/components/ceshi1')
 const ceshi2 = () => import('@/components/ceshi2')
 const ceshi3 = () => import('@/components/ceshi3')
+const articlelist = () => import('@/components/articlelist')
+
+
+
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'addrlist',
-      component: addrlist,
+      name: 'articlelist',
+      component: articlelist,
       children:[
       	{path:'/',component:ceshi1,
 		    meta: {
