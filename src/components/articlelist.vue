@@ -7,7 +7,24 @@
 				<div :class="{active:index==tabi}" @click="huan(index)">{{val}}</div>
 			</div >
 		</div>
-
+		<div class="newlist">
+			<ul>
+				<li>
+					<div class="ntop">
+						<div class="nimg"></div>
+						<div class="ncen">
+							<div class="n1">宽带缴顺丰三分第三方水电费水电分</div>
+							<div class="data">2017-10-12</div>
+						</div>
+						<div class="collect">收藏</div>
+					</div>
+					<div class="list">实打实地方</div>
+					<ul class="ulist">
+						<li><img src="../assets/images/1024.jpg" alt=""></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
 </template>
 <script >
@@ -49,33 +66,6 @@
 	   }
 	}
 </script>
-<style scoped>
-.topmenu{
-	position: fixed;
-	top:45px;
-	left: 0;
-	right: 0;
-	height: 54px;
-	border-bottom: 1px solid #eee;
-	display: flex;
-}
-.topmenu>div{
-	flex: 1;
-	display: flex;
-	justify-content:center;
-	align-items:center;
-}
-.topcom>div{
-	width:82px;
-	height: 29px;
-	line-height: 29px;
-	text-align: center;
-	border-radius: 4px;/*no*/
-	font-size: 16px;
-}
-.topcom>div.active{
-	color: #fff;
-    background: #faa200;
-}
-
+<style lang="css" scoped src="../assets/css/articlelist.css">
+  /*@import "../assets/css/articlelist.css"*/
 </style>

@@ -1,0 +1,95 @@
+.topmenu{
+	position: fixed;
+	top:45px;
+	left: 0;
+	right: 0;
+	height: 54px;
+	border-bottom: 1px solid #eee;/*no*/
+	display: flex;
+}
+.topmenu>div{
+	flex: 1;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.topcom>div{
+	width:82px;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	border-radius: 4px;/*no*/
+	font-size: 16px;
+}
+.topcom>div.active{
+	color: #fff;
+    background: #faa200;
+}
+.newlist{
+	padding: 100px 0 0;
+
+}
+.newlist>ul{
+	width:100%;
+	padding: 0 20px;
+		box-sizing: border-box;
+}
+.newlist>ul>li{
+	width:100%;
+	box-sizing: border-box;
+}
+.ntop{
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+}
+.nimg{
+	width:50px;
+	height: 50px;
+	border-radius: 4px;/*no*/
+	background: url(../images/marketlist_01.png);
+	background-size: 100% 100%;
+}
+.ncen{
+	flex: 1;
+	 margin-left:20px;
+	 padding-top:8px;
+}
+.n1{
+	width:100%;
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 15px;
+	color: #303030;
+}
+.data{
+	color: #b6b6b6;
+    font-size: 10px;
+}
+.list{
+	line-height: 20px;
+    max-height: 66px;
+    font-size: 14px;
+    color: #8f8f94;
+}
+.collect{
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #fcbe4b;
+	padding-top:8px;
+}
+.ulist li{
+	width:33.33%;
+
+}
+.ulist li img{
+	width:100%;
+	height: auto;
+	border-radius: 6px;/*no*/
+}
+

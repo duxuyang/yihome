@@ -14,5 +14,6 @@ th,strong,var,em{font-weight: normal; font-style: normal;}
 a{text-decoration: none;}
 .lf{float:left;}
 .rt{float:right;}
+div{box-sizing: border-box;}
 /*a:link,a:visited,a:hover,a:active{text-decoration:none;} */
 /*==========================Reset_End===========================*/
