@@ -12,11 +12,15 @@
 				<li>
 					<div class="ntop">
 						<div class="nimg"></div>
-						<div class="ncen">
-							<div class="n1">宽带缴顺丰三分第三方水电费水电分</div>
-							<div class="data">2017-10-12</div>
+						<div class="nrigth">
+							<div class="ncen">
+								<div class="n1">宽带缴芬水电分</div>
+								<div class="data">2017-10-12</div>
+							</div>			
+							<div class="collect" >收藏</div>
 						</div>
-						<div class="collect">收藏</div>
+
+						
 					</div>
 					<div class="list">实打实地方</div>
 					<ul class="ulist">

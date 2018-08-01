@@ -42,6 +42,7 @@
 	display: flex;
 	width: 100%;
 	box-sizing: border-box;
+	padding-top:10px;
 }
 .nimg{
 	width:50px;
@@ -50,10 +51,14 @@
 	background: url(../images/marketlist_01.png);
 	background-size: 100% 100%;
 }
+.nrigth{
+	flex: 1;
+	display: flex;
+	padding-top:5px;
+}
 .ncen{
 	flex: 1;
-	 margin-left:20px;
-	 padding-top:8px;
+	margin-left:20px;
 }
 .n1{
 	width:100%;
@@ -67,25 +72,33 @@
 }
 .data{
 	color: #b6b6b6;
-    font-size: 10px;
+	font-size: 10px;
 }
 .list{
 	line-height: 20px;
-    max-height: 66px;
-    font-size: 14px;
-    color: #8f8f94;
+	max-height: 66px;
+	font-size: 14px;
+	color: #8f8f94;
+	padding-top: 10px;
+	padding-left: 22px;
 }
 .collect{
+	font-size: 11px;
 	height: 20px;
 	line-height: 20px;
+	width: 38px;
 	text-align: center;
 	background: #fff;
 	border: 1px solid #fcbe4b;
-	padding-top:8px;
+	border-radius: 3px; /*no*/
+}
+.ulist{
+	font-size: 0;
 }
 .ulist li{
-	width:33.33%;
-
+	width:33%;
+	display: inline-block;
+padding: 10px 0px 0px 13px;
 }
 .ulist li img{
 	width:100%;
