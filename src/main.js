@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+ import store from './components/store/store'
 import 'lib-flexible'
 Vue.config.productionTip = false
 
@@ -13,6 +14,7 @@ import './assets/css/reset.css'
 new Vue({
   el: '#app',
   router,
+   store,
   components: { App },
   template: '<App/>'
 })

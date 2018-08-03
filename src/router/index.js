@@ -27,25 +27,33 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'articlelist',
-      component: articlelist,
-      children:[
-      	{path:'/',component:ceshi1,
-		    meta: {
-		      index:0,
-		    }
-      },
-      	{path:'/ceshi2',component:ceshi2,
-			    meta: {
-			      index:1,
-			    }
-      },
-      	{path:'/ceshi3',component:ceshi3,
-			    meta: {
-			      index:2,
-			    }
-      }
-      ]
-    }
+      name: 'ceshi1',
+      component: ceshi1
+      // children:[
+      // 	{path:'/',component:ceshi1,
+		    // meta: {
+		    //   index:0,
+		    // }
+      // },
+      // 	{path:'/ceshi2',component:ceshi2,
+			   //  meta: {
+			   //    index:1,
+			   //  }
+      // },
+      // 	{path:'/ceshi3',component:ceshi3,
+			   //  meta: {
+			   //    index:2,
+			   //  }
+      // }
+      // ]
+    },
+    {
+       path: '/ceshi2/:data1',
+       component: ceshi2,
+    },
+    {
+       path: '/ceshi3',
+       component: ceshi3,
+    }    
   ]
 })
