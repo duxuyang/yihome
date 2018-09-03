@@ -5,7 +5,9 @@
 
 
  const state = {
-        count:1
+        count:1,
+        name:'tom',
+        age:12
     }
 
  const mutations={
@@ -14,6 +16,12 @@
         },
         reduce(state){
             state.count-=1;
+        },
+        change(state,str){
+        	state.name=str;
+        },
+        change1(state,a){
+        	state.age=a;
         }
     }
 const getters = {

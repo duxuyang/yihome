@@ -1,8 +1,10 @@
 <template>
 	<div>
 		测试2222222
-		<h3>{{$store.state.count}}</h3>
-
+	 <h3>{{$store.state.count}}</h3>
+   <h1>{{$store.state.name}}</h1>
+   <h1>{{$store.state.age}}</h1>
+   <button @click="change('你好哦啊')">改变</button>
 		<button @click="add(10)">+</button>
 		<button @click="reduce">-</button>
 		<br>
@@ -19,7 +21,7 @@ export default {
     }
   },
   methods:{
-	  ...mapMutations(['add','reduce']),
+	  ...mapMutations(['add','reduce','change']),
 	  ...mapGetters(["count"])
   },
   mounted:function(){

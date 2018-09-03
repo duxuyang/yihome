@@ -27,9 +27,12 @@ export default {
   	},
   	sent(data){
   		this.$router.push('/ceshi2/'+data);
+  		this.$store.commit('change',"jim");
+  		this.$store.commit('change1',33);
   	},
   	sent1(mm){
   		this.$router.push(mm);
+
   	}
   }
 

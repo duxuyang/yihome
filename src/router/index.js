@@ -18,17 +18,14 @@ const ceshi2 = () => import('@/components/ceshi2')
 const ceshi3 = () => import('@/components/ceshi3')
 const articlelist = () => import('@/components/articlelist')
 
-
-
-
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'ceshi1',
-      component: ceshi1
+      name: 'main',
+      component: main
       // children:[
       // 	{path:'/',component:ceshi1,
 		    // meta: {

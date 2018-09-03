@@ -26,7 +26,10 @@
 </script>
 <style scoped>
 .footer{
-	width:100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	height:48px;
 	border-top: 1px solid #e4e1da;
 	background: #fff;

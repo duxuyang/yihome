@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import 'swiper/dist/css/swiper.css'
+
  import store from './components/store/store'
 import 'lib-flexible'
 Vue.config.productionTip = false
