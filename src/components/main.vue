@@ -83,7 +83,13 @@
   	<div class="acti_img">
   		<ul>
   			<li>
-  				
+  				<a href="">
+            <img src="" alt="">    
+            <div>
+              <div></div>
+              <div></div>
+            </div>
+          </a>
   			</li>
   		</ul>
   	</div>
@@ -257,10 +263,18 @@
 }
 .acti_img{
 	width: 100%;
-  padding:13px 0 0 15px;
+  padding:13px  15px 0;
 }
 .acti_img ul li{
 	margin-bottom: 30px;
-	padding: 11px 15px 0 0;
+
 }
+.acti_img ul li a{
+  display: flex;
+
+}
+
+
+
+
 </style>
