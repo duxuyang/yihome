@@ -2,55 +2,44 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 
-const regist = () => import('@/components/regist')
-const login = () => import('@/components/login')
-const setpass = () => import('@/components/setpass')
-const goodslist = () => import('@/components/goodslist')
-const imagelist = () => import('@/components/imagelist')
-const footer = () => import('@/components/footer')
-const main = () => import('@/components/main')
-const myinfo = () => import('@/components/myinfo')
-const setting = () => import('@/components/setting')
-const addrlist = () => import('@/components/addrlist')
-const setuser = () => import('@/components/setuser')
-const ceshi1 = () => import('@/components/ceshi1')
-const ceshi2 = () => import('@/components/ceshi2')
-const ceshi3 = () => import('@/components/ceshi3')
-const articlelist = () => import('@/components/articlelist')
+
+const regist = r => require.ensure([], () => r(require('../components/regist.vue')))
+const login = r => require.ensure([], () => r(require('../components/login.vue')))
+const setpass = r => require.ensure([], () => r(require('../components/setpass.vue')))
+const goodslist = r => require.ensure([], () => r(require('../components/goodslist.vue')))
+const main = r => require.ensure([], () => r(require('../components/main.vue')))
+const myinfo = r => require.ensure([], () => r(require('../components/myinfo.vue')))
+const setting = r => require.ensure([], () => r(require('../components/setting.vue')))
+const addrlist = r => require.ensure([], () => r(require('../components/addrlist.vue')))
+const setuser = r => require.ensure([], () => r(require('../components/setuser.vue')))
+const articlelist = r => require.ensure([], () => r(require('../components/articlelist.vue')))
+
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'main',
       component: main
       // children:[
       // 	{path:'/',component:ceshi1,
-		    // meta: {
-		    //   index:0,
-		    // }
+      // meta: {
+      //   index:0,
+      // }
       // },
       // 	{path:'/ceshi2',component:ceshi2,
-			   //  meta: {
-			   //    index:1,
-			   //  }
+      //  meta: {
+      //    index:1,
+      //  }
       // },
       // 	{path:'/ceshi3',component:ceshi3,
-			   //  meta: {
-			   //    index:2,
-			   //  }
+      //  meta: {
+      //    index:2,
+      //  }
       // }
       // ]
     },
-    {
-       path: '/ceshi2/:data1',
-       component: ceshi2,
-    },
-    {
-       path: '/ceshi3',
-       component: ceshi3,
-    }    
+
   ]
 })
